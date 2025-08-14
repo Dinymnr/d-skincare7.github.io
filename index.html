@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>d,skincare — Skincare Remaja</title>
+  <meta name="description" content="d,skincare: skincare aman untuk remaja. Gentle, efektif, dan fun.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header glass">
+    <div class="container header-inner">
+      <a href="#" class="brand">
+        <img src="assets/logo.svg" alt="d,skincare logo">
+      </a>
+      <nav class="nav">
+        <a href="#produk">Produk</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#ulasan">Ulasan</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="actions">
+        <button class="btn ghost" id="themeToggle" aria-label="Toggle Theme">☀</button>
+        <button class="btn primary cart-btn" id="openCart">
+          Keranjang <span class="badge" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO / SLIDER -->
+  <section class="hero" id="home">
+    <div class="slider" id="slider">
+      <div class="slide current">
+        <img src="assets/slide1.svg" alt="Kulit Sehat, Confidence Naik!">
+      </div>
+      <div class="slide">
+        <img src="assets/slide2.svg" alt="Bahan Lembut • Bebas Alkohol">
+      </div>
+      <div class="slide">
+        <img src="assets/slide3.svg" alt="Promo Pelajar Setiap Minggu">
+      </div>
+      <button class="slider-nav prev" aria-label="Sebelumnya">&#10094;</button>
+      <button class="slider-nav next" aria-label="Berikutnya">&#10095;</button>
+      <div class="dots" id="sliderDots" aria-label="Slider navigation"></div>
+    </div>
+    <div class="hero-cta container">
+      <h1 data-animate="fade-up">Aman untuk Remaja. Efektif. Fun.</h1>
+      <p data-animate="fade-up" data-delay="100">Rutinitas simpel untuk kulit sehat dan percaya diri – dari cleanser sampai sunscreen.</p>
+      <div class="cta-buttons" data-animate="fade-up" data-delay="200">
+        <a href="#produk" class="btn primary lg">Belanja Sekarang</a>
+        <a href="#tentang" class="btn outline lg">Kenalan Dulu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products container" id="produk">
+    <div class="section-head">
+      <h2 data-animate="fade-up">Produk Favorit</h2>
+      <p data-animate="fade-up" data-delay="100">Diracik untuk kulit remaja: lembut, ringan, dan ramah kantong.</p>
+      <div class="filters" data-animate="fade-up" data-delay="200">
+        <input id="searchInput" type="search" placeholder="Cari produk...">
+        <select id="sortSelect" aria-label="Urutkan">
+          <option value="pop">Terpopuler</option>
+          <option value="asc">Harga: termurah</option>
+          <option value="desc">Harga: termahal</option>
+        </select>
+      </div>
+    </div>
+    <div class="grid" id="productGrid">
+      <!-- JS will inject product cards -->
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="tentang">
+    <div class="container about-inner">
+      <div class="about-text">
+        <h2 data-animate="fade-up">Tentang d,skincare</h2>
+        <p data-animate="fade-up" data-delay="100">
+          Halo! Aku <strong>d</strong>, pemilik d,skincare. Misi kami sederhana: bikin skincare yang
+          <em>gentle</em> dan menyenangkan untuk remaja. Tanpa alkohol keras, tanpa parfum menyengat.
+        </p>
+        <ul class="pill-list" data-animate="fade-up" data-delay="200">
+          <li>Dermatologically tested</li>
+          <li>Non-comedogenic</li>
+          <li>Harga bersahabat</li>
+          <li>Cruelety-free</li>
+        </ul>
+      </div>
+      <div class="about-art" data-animate="float">
+        <img src="assets/product1.svg" alt="Produk d,skincare">
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews" id="ulasan">
+    <div class="container">
+      <h2 data-animate="fade-up">Apa Kata Mereka</h2>
+      <div class="review-scroller" id="reviewScroller" aria-live="polite">
+        <article class="review-card">
+          <p>“Cleanser-nya lembut bgt. Mukaku ga ketarik!”</p>
+          <div class="by">@naya, 16</div>
+        </article>
+        <article class="review-card">
+          <p>“Sunscreennya ringan, no white cast. Mantap!”</p>
+          <div class="by">@iman, 17</div>
+        </article>
+        <article class="review-card">
+          <p>“Paket basic-nya cocok buat pemula.”</p>
+          <div class="by">@salsa, 15</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq container" id="faq">
+    <h2 data-animate="fade-up">FAQ</h2>
+    <details open>
+      <summary>Aman untuk umur berapa?</summary>
+      <p>Formula kami dirancang untuk kulit remaja (12–19 tahun). Untuk kulit sangat sensitif, uji tempel dulu ya.</p>
+    </details>
+    <details>
+      <summary>Apakah bebas alkohol dan paraben?</summary>
+      <p>Kami menghindari alkohol keras dan tidak menggunakan paraben dalam rangkaian ini.</p>
+    </details>
+    <details>
+      <summary>Pengiriman ke seluruh Indonesia?</summary>
+      <p>Yes! Kami bekerja sama dengan kurir terpercaya – estimasi 2–5 hari kerja.</p>
+    </details>
+  </section>
+
+  <!-- CART SIDEBAR -->
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-labelledby="cartTitle" role="dialog">
+    <div class="cart-header">
+      <h3 id="cartTitle">Keranjang</h3>
+      <button class="icon-btn" id="closeCart" aria-label="Tutup">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="row">
+        <span>Subtotal</span>
+        <strong id="cartSubtotal">Rp0</strong>
+      </div>
+      <button class="btn primary wfull" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+  <div class="backdrop" id="backdrop"></div>
+
+  <!-- CHECKOUT MODAL -->
+  <div class="modal" id="checkoutModal" role="dialog" aria-labelledby="checkoutTitle" aria-hidden="true">
+    <div class="modal-content">
+      <div class="modal-head">
+        <h3 id="checkoutTitle">Checkout</h3>
+        <button class="icon-btn" id="closeCheckout">&times;</button>
+      </div>
+      <form id="checkoutForm" class="checkout-form">
+        <label>Nama Lengkap
+          <input type="text" name="name" required placeholder="nama kamu">
+        </label>
+        <label>No. HP / WhatsApp
+          <input type="tel" name="phone" required placeholder="08xxxxxxxxxx" pattern="\d{8,15}">
+        </label>
+        <label>Alamat Pengiriman
+          <textarea name="address" required placeholder="jalan, kelurahan, kecamatan, kota, kode pos"></textarea>
+        </label>
+        <label>Metode Pembayaran
+          <select name="payment" required>
+            <option value="">Pilih...</option>
+            <option>COD</option>
+            <option>Transfer Bank</option>
+            <option>E-Wallet</option>
+          </select>
+        </label>
+        <div class="row space-between">
+          <span>Total</span>
+          <strong id="checkoutTotal">Rp0</strong>
+        </div>
+        <button type="submit" class="btn primary wfull">Buat Pesanan</button>
+        <p class="form-hint">* Ini adalah demo statis. Pesanan disimpan di browser (localStorage).</p>
+      </form>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> d,skincare • Remaja Glow Up 💙</p>
+    </div>
+  </footer>
+
+  <script>
+    window.__PRODUCTS__ = [{"id": 1, "name": "Gentle Cleanser", "price": 59000, "desc": "Membersihkan tanpa bikin kering", "img": "assets/product1.svg", "popular": 99}, {"id": 2, "name": "Calm & Glow Toner", "price": 69000, "desc": "Menyejukkan dan bantu cerah alami", "img": "assets/product2.svg", "popular": 98}, {"id": 3, "name": "Hydra Gel Moist", "price": 79000, "desc": "Ringan, cepat meresap – anti lengket", "img": "assets/product3.svg", "popular": 97}, {"id": 4, "name": "Daily Safe Sunscreen SPF 30", "price": 89000, "desc": "Perlindungan harian, no white cast", "img": "assets/product4.svg", "popular": 96}, {"id": 5, "name": "Spot Care Serum", "price": 99000, "desc": "Bantu atasi noda & jerawat ringan", "img": "assets/product5.svg", "popular": 95}, {"id": 6, "name": "Lip Care Balm", "price": 39000, "desc": "Bibirmu lembap dan sehat", "img": "assets/product6.svg", "popular": 94}];
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
